@@ -38,7 +38,7 @@ Verificar que los endpoints de la API cumplan con:
 La documentación técnica está organizada para garantizar la transparencia y trazabilidad del proceso:
 
 * **[01_Test_Plan_API_JSONplaceholder]:** Estrategia, alcance, riesgos y criterios de aceptación.
-* **[02_Test_Cases_API_JSONplaceholder]:** Matriz detallada con escenarios, Payloads de entrada y resultados esperados.
+* **[02_Test_Cases_API_JSONplaceholder]:** Diseño de casos de prueba detallando la carga de datos (Requests), validación de respuestas del servidor y códigos de estado.
 * **[03_Test_Execution_API_JSONplaceholder]:** Registro detallado con evidencias de la última ejecución.
 * **[04_Informe_Final_JSONplaceholder]:** Informe de cierre con conclusiones, métricas de calidad y recomendaciones.
 
@@ -53,4 +53,3 @@ La documentación técnica está organizada para garantizar la transparencia y t
 **Carlos Manuel Rojano Camargo**
 *QA Manual | API Testing | Testing Funcional*
 
----
