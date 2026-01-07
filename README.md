@@ -1,97 +1,56 @@
-JSONPlaceholder API | QA Manual Project
-Descripción del proyecto
+# JSONPlaceholder API | QA Manual Project
 
-Este proyecto corresponde a un proceso completo de testing manual de API REST realizado sobre la API pública JSONPlaceholder.
+## Descripción del Proyecto
+Este proyecto corresponde a un proceso completo de **testing manual de API REST** realizado sobre la API pública **JSONPlaceholder**. 
 
-El objetivo fue validar el correcto funcionamiento de los endpoints, verificando respuestas, códigos de estado, manejo de errores y estructura de los datos, siguiendo el ciclo de vida del testing (STLC) en un escenario similar a un entorno real de trabajo.
+El objetivo principal fue validar el correcto funcionamiento de los endpoints, verificando respuestas, códigos de estado (Status Codes), manejo de errores y estructura de los datos (JSON), siguiendo el ciclo de vida del testing (**STLC**) en un escenario simulado de entorno real.
 
-NOTA: La API utilizada es un mock público, por lo que los datos no son persistentes. Esta limitación fue considerada y documentada durante las pruebas.
+**NOTA:** La API utilizada es un *mock* público, por lo que los datos no son persistentes. Esta limitación técnica fue considerada, analizada y documentada durante toda la fase de ejecución.
 
-Objetivo
-
+## Objetivos de las Pruebas
 Verificar que los endpoints de la API cumplan con:
+* **Manejo de métodos HTTP:** Uso correcto de `GET`, `POST`, `PUT` y `DELETE`.
+* **Validación de Respuestas:** Verificación de Status Codes esperados (200 OK, 201 Created, 404 Not Found, etc.).
+* **Integridad de Datos:** Estructura correcta del *Response Body* en formato JSON.
+* **Flujos Negativos:** Comportamiento adecuado ante datos inválidos o recursos inexistentes.
 
-Correcto manejo de métodos HTTP (GET, POST, PUT, DELETE)
+## Alcance del Testing
+### Tipos de prueba ejecutados:
+* **Pruebas Funcionales:** Validación de la lógica de negocio del endpoint.
+* **Pruebas Negativas:** Ingreso de datos erróneos para validar la robustez.
+* **Validación de Contratos:** Verificación del esquema y tipos de datos en el JSON.
+* **Pruebas Exploratorias:** Identificación de comportamientos no documentados.
 
-Respuestas y códigos de estado esperados
+## Endpoints Evaluados:
+* `GET /users` (Listado completo de usuarios)
+* `GET /users/{id}` (Consulta de usuario específico)
+* `POST /users` (Simulación de creación de recurso)
+* `PUT /users/{id}` (Simulación de actualización total)
+* `DELETE /users/{id}` (Simulación de eliminación)
 
-Comportamiento ante datos inválidos o inexistentes
+## Herramientas Utilizadas
+* **Postman:** Ejecución, organización de colecciones y validación de *Requests/Responses*.
+* **Jira:** Gestión de Historias de Usuario, trazabilidad y registro de hallazgos.
+* **Google Sheets / Excel:** Diseño de la matriz de casos de prueba y reporte de ejecución.
+* **JSON Viewer:** Inspección técnica de la estructura de datos.
 
-Estructura correcta del response en formato JSON
+## Artefactos del Proyecto
+La documentación técnica está organizada para garantizar la transparencia y trazabilidad del proceso:
 
-Manejo adecuado de operaciones CRUD
+* **[01_Test_Plan_API]:** Estrategia, alcance, riesgos y criterios de aceptación.
+* **[02_Test_Cases_API]:** Matriz detallada con escenarios, Payloads de entrada y resultados esperados.
+* **[03_Test_Execution_Report]:** Registro detallado con evidencias de la última ejecución.
+* **[04_Final_QA_Report]:** Informe de cierre con conclusiones, métricas de calidad y recomendaciones.
 
-Alcance de las pruebas
+## Resultados Finales
+* **Casos de Prueba Ejecutados:** 12
+* **Bugs Reportados:** 0 (Se validó que la API responde según la documentación del mock).
+* **Estado del Proyecto:** **Cerrado Exitosamente**. 
 
-Tipos de prueba ejecutados:
+---
 
-Pruebas funcionales
+## 👤 Autor
+**Carlos Manuel Rojano Camargo**
+*QA Manual | API Testing | Testing Funcional*
 
-Pruebas negativas
-
-Validación de status codes
-
-Validación de response body
-
-Pruebas exploratorias
-
-Regresión básica
-
-Endpoints evaluados:
-
-GET /users
-
-GET /users/{id}
-
-POST /users
-
-PUT /users/{id}
-
-DELETE /users/{id}
-
-🛠️ Herramientas
-
-Postman: Ejecución de requests HTTP
-
-Jira:
-
-Historias de usuario
-
-Seguimiento de ejecución
-
-Registro y trazabilidad de defectos
-
-Microsoft Excel / Google Sheets:
-
-Casos de prueba
-
-Reporte de ejecución
-
-Evidencias: Capturas de pantalla de respuestas y status codes
-
-Resultados Finales
-
-Casos ejecutados: 12
-
-Bugs reportados: 0
-
-Estado: Proyecto cerrado exitosamente con informe final de QA
-
-Todas las validaciones definidas en el Test Plan fueron ejecutadas conforme a lo esperado, considerando las limitaciones propias de una API mock.
-
-Artefactos del Proyecto
-
-Dentro de este repositorio encontrarás la documentación técnica organizada según el ciclo de vida del testing:
-
-[01_Test_Plan_API] – Estrategia, alcance y criterios de aceptación
-
-[02_Test_Cases_API] – Casos de prueba documentados para cada endpoint
-
-[03_Test_Execution_Report] – Registro detallado de resultados de ejecución
-
-[04_Final_QA_Report] – Informe final con conclusiones y métricas de calidad
-
-👤 Autor
-
-Carlos Manuel Rojano Camargo
-QA Manual | API Testing | Testing Funcional
+---
