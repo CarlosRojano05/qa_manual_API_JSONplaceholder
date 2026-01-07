@@ -37,10 +37,10 @@ Verificar que los endpoints de la API cumplan con:
 ## Artefactos del Proyecto
 La documentación técnica está organizada para garantizar la transparencia y trazabilidad del proceso:
 
-* **[01_Test_Plan_API]:** Estrategia, alcance, riesgos y criterios de aceptación.
-* **[02_Test_Cases_API]:** Matriz detallada con escenarios, Payloads de entrada y resultados esperados.
-* **[03_Test_Execution_Report]:** Registro detallado con evidencias de la última ejecución.
-* **[04_Final_QA_Report]:** Informe de cierre con conclusiones, métricas de calidad y recomendaciones.
+* **[01_Test_Plan_API_JSONplaceholder]:** Estrategia, alcance, riesgos y criterios de aceptación.
+* **[02_Test_Cases_API_JSONplaceholder]:** Matriz detallada con escenarios, Payloads de entrada y resultados esperados.
+* **[03_Test_Execution_API_JSONplaceholder]:** Registro detallado con evidencias de la última ejecución.
+* **[04_Informe_Final_JSONplaceholder]:** Informe de cierre con conclusiones, métricas de calidad y recomendaciones.
 
 ## Resultados Finales
 * **Casos de Prueba Ejecutados:** 12
